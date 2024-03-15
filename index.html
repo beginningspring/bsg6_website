@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <!-- Set latest rendering mode for IE -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Beginning Spring 5 &#8212; From Novice to Professional</title>
+        <meta name="description" content="WebSocket - Lightweight Client-Server Communications">
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Volkhov:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+        <!-- Set viewport for mobile devices to zoom to 100% and turn off user privileges to scale/zoom -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/photoswipe.css">
+        <link rel="stylesheet" href="css/jquery.booklet.latest.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Loading jQuery liblary from CDN with a local fallback when CDN not responding. -->
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="js/vendor/html5shiv.min.js"></script>
+            <script type="text/javascript" src="js/vendor/selectivizr.min.js"></script>
+            <link rel="stylesheet" href="css/ie8.css">
+        <![endif]-->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '370894073299581');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=370894073299581&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="span12 clearfix">
+
+                        <a href="index.html"><h1 class="logo">Beginning Spring 5</h1></a>
+
+                        <a href="#" class="mobile-nav-btn visible-phone"><i class="icon-align-justify icon-white"></i></a>
+
+                        <nav>
+
+                            <ul class="hidden-phone">
+                                <li><a href="#link-about">About this book</a></li>
+                                <li><a href="#link-author">Authors</a></li>
+                                <li><a href="https://www.apress.com/us/book/9781484244852">Buy this book</a></li>
+                            </ul>
+
+                            <div class="mobile-nav"></div>
+
+                        </nav>
+
+                    </div> <!-- span12 end -->
+
+                </div> <!-- row end -->
+
+            </div> <!-- container end -->
+
+        </header>
+
+        <div class="container">
+
+            <section class="row">
+
+                <div class="span12">
+
+                    <img src="img/normal/book.jpg" alt="Book" class="book-image" width="304px" height="319px">
+
+                    <hgroup>
+                        <h1>Beginning Spring 5</h1>
+                        <h3>
+                            From Novice to Professional
+                        </h3>
+                    </hgroup>
+
+                    <p>
+Get started with Spring Framework 5 and its ecosystem, with a guide to the working practices in modern development. Authors Joseph Ottinger and Andrew Lombardi will teach you how to use the Spring Framework to build Java-based applications, web applications, and microservices. You’ll see how Spring has drastically and positively affected the way we program and design applications in Java.
+Beginning Spring 5 discusses how you can build apps with the Spring mindset and what the benefits of that mindset are. Along the way you will learn many aspects of the Spring ecosystem with easy-to-understand applications designed to teach you not only the technology, but also the practices that benefit the most from Spring.
+
+                     </p>
+
+                    <a href="https://www.apress.com/us/book/9781484244852" class="button green">BUY THE BOOK TODAY</a>
+
+                </div> <!-- span12 end -->
+
+            </section> <!-- row end -->
+
+        </div> <!-- container end -->
+
+        <section class="container" id="link-about">
+
+            <div class="row">
+
+                <div class="ripped-paper clearfix">
+
+                    <div class="span4">
+
+                        <h4>Build <em>real</em> examples.</h4>
+
+                    </div> <!-- span4 end -->
+
+                    <div class="span5">
+
+                        <p>
+                            Discover the most common use cases encountered in the real world and create reliable, tested, modular software
+                        </p>
+
+                    </div> <!-- span5 end -->
+
+                    <div class="span3">
+
+                        <img src="img/normal/example-graphic.png" alt="Build real examples." width="220px" height="160px">
+
+                    </div> <!-- span3 end -->
+
+                </div>
+
+            </div> <!-- row end -->
+
+            <div class="row">
+
+                <div class="ripped-paper clearfix">
+
+                    <div class="span4 pull-right">
+
+                        <h4>Dive <em>deep</em> into the API.</h4>
+
+                    </div> <!-- span4 end -->
+
+                    <div class="span5 pull-right">
+
+                        <p>
+                            Integrate and use data access and persistence frameworks such as Hibernate, JPA, and MongoDB
+Program functional or reactive Java with the latest Spring 5 features including WebFlux
+                        </p>
+
+                    </div> <!-- span5 end -->
+
+                    <div class="span3 pull-left">
+
+                        <img src="img/normal/api.png" alt="Dive deep into the API" width="220px" height="160px">
+
+                    </div> <!-- span3 end -->
+
+                </div> <!-- ripped-paper end -->
+
+            </div> <!-- row end -->
+
+            <div class="row">
+
+                <div class="ripped-paper clearfix">
+
+                    <div class="span4">
+
+                        <h4>Learn <em>Spring 5</em> today.</h4>
+
+                    </div> <!-- span4 end -->
+
+                    <div class="span5">
+
+                        <p>
+                            Those who are new to Spring or for those who have experience with Spring but want to learn what's new in Spring 5. This book assumes you have some prior coding experience in Java at least.
+                        </p>
+
+                    </div> <!-- span5 end -->
+                </div> <!-- ripped-paper end -->
+
+            </div> <!-- row end -->
+
+        </section> <!-- container end -->
+
+        <section id="Gallery" class="container book-preview">
+
+            <div class="row">
+
+                <div class="span12">
+
+                    <hgroup>
+                        <h1>A quick peek into the book</h1>
+                        <h3>Here’s just a quick summary of what you will find inside:</h3>
+                    </hgroup>
+
+                </div> <!-- span12 end -->
+
+            </div> <!-- row end -->
+
+            <div class="row">
+
+                <div class="span4 chapter">
+
+                    <h5>Chapter 1</h5>
+                    <h6>History and Justification</h6>
+
+                </div> <!-- span4 end -->
+                <div class="span4 chapter">
+
+                    <h5>Chapter 2</h5>
+                    <h6>Hello, World!</h6>
+
+                </div> <!-- span4 end -->
+                <div class="span4 chapter">
+
+                    <h5>Chapter 3</h5>
+                    <h6>Configuration and Declaration of Beans</h6>
+
+                </div> <!-- span4 end -->
+            </div>
+            <div class="row">
+                <div class="span4 chapter">
+
+                    <h5>Chapter 4</h5>
+                    <h6>Lifecycle</h6>
+
+                </div> <!-- span4 end -->
+                <div class="span4 chapter">
+
+                    <h5>Chapter 5</h5>
+                    <h6>Spring and Jakarta EE</h6>
+
+                </div> <!-- span4 end -->
+                <div class="span4 chapter">
+
+                    <h5>Chapter 6</h5>
+                    <h6>Spring Web</h6>
+
+                </div> <!-- span4 end -->
+            </div>
+            <div class="row">
+                <div class="span4 chapter">
+
+                    <h5>Chapter 7</h5>
+                    <h6>Spring Boot</h6>
+
+                </div> <!-- span4 end -->
+                <div class="span4 chapter">
+
+                    <h5>Chapter 8</h5>
+                    <h6>Spring Data Access with JdbcTemplate</h6>
+
+                </div> <!-- span4 end -->
+                <div class="span4 chapter">
+
+                    <h5>Chapter 9</h5>
+                    <h6>Persistence with Spring and Spring Data</h6>
+
+                </div> <!-- span4 end -->
+
+            </div> <!-- row end -->            
+            <div class="row">
+                <div class="span4 chapter">
+
+                    <h5>Chapter 10</h5>
+                    <h6>Spring Security</h6>
+
+                </div> <!-- span4 end -->
+                <div class="span4 chapter">
+
+                    <h5>Chapter 11</h5>
+                    <h6>Next Steps</h6>
+
+                </div> <!-- span4 end -->
+            </div> <!-- row end -->
+
+        </section> <!-- book-preview end -->
+
+        <footer id="link-author">
+
+             <div class="container">
+
+                <div class="row">
+                    <h1>About the authors</h1>
+
+
+                    <div class="span8">
+                        <h3>
+                            Joseph B. Ottinger
+                        </h3>
+                        <p>is a distributed systems architect with experience in many cloud platforms. He was the editor-in-chief of both Java Developer Journal and TheServerSide.com, and has also contributed to many, many publications, open source projects, and commercial projects over the years, using many different languages (but primarily Java, Python, and JavaScript). He’s also a previously published author online (with too many publications to note individually) and in print, through Apress.</p>
+
+                        <ul>
+                            <li><a href="https://twitter.com/josephbottinger"><img src="img/normal/icon-twitter.png" alt="Social icon" width="30px" height="30px"></a></li>
+                            <li><a href="https://autumncode.com"><img src="img/normal/icon-mail.png" alt="Social icon" width="30px" height="30px"></a></li>
+                        </ul>
+
+                    </div>
+                </div> <!-- span8 end -->
+
+                <div class="row">
+
+                    <div class="span8">
+                            <h3>
+                                Andrew Lombardi
+                            </h3>
+                            <p>is a veteran entrepreneur and systems engineer, he’s run the successful boutique consulting firm Mystic Coders for 18 years. With his team they’ve helped companies as large as Walmart and firms with problems as interesting as helicopter simulation. A few years ago he authored a book on WebSocket for O’Reilly which focused on the server and client components all written with JavaScript and Node.js. He firmly believes that the best thing he’s done so far, is being a great dad.</p>
+                            <ul>
+                                <li><a href="https://twitter.com/kinabalu"><img src="img/normal/icon-twitter.png" alt="Social icon" width="30px" height="30px"></a></li>
+                                <li><a href="https://facebook.com/mysticcoders"><img src="img/normal/icon-facebook.png" alt="Social icon" width="30px" height="30px"></a></li>
+                                <li><a href="https://mysticcoders.com"><img src="img/normal/icon-mail.png" alt="Social icon" width="30px" height="30px"></a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div> <!-- row end -->
+
+                <a href="#" class="go-top">Go Top</a>
+
+             </div> <!-- container end -->
+
+        </footer>
+
+        <!-- Jquery US -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/vendor/jquery.easing.1.3.js"></script>
+
+        <!-- Gallery scripts -->
+        <script src="js/vendor/klass.min.js"></script>
+        <script src="js/vendor/code.photoswipe.jquery-3.0.5.min.js"></script>
+
+        <!-- Book flip script -->
+        <script src="js/vendor/jquery.booklet.latest.min.js"></script>
+
+        <!-- Custom java -->
+        <script src="js/main.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-254925-13', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1054116853;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1054116853/?guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+    </body>
+</html>
